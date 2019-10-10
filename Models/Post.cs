@@ -26,12 +26,6 @@
 		}
 
 		// **********
-		[System.ComponentModel.DataAnnotations.StringLength
-			(maximumLength: 50)]
-		public string Name { get; set; }
-		// **********
-
-		// **********
 		// **********
 		// **********
 		public virtual User WritterUser { get; set; }
@@ -53,6 +47,12 @@
 		public System.Guid? VerifierUserId { get; set; }
 		// **********
 		// **********
+		// **********
+
+		// **********
+		[System.ComponentModel.DataAnnotations.StringLength
+			(maximumLength: 50)]
+		public string Name { get; set; }
 		// **********
 	}
 }
